@@ -1,0 +1,279 @@
+<html>
+	<head>
+		<title>LapTop - Duy Anh</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/3875455e82.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="../css_js/chitietsanpham.css">
+		<script src="../css_js/jquery-3.6.0.min.js"></script>
+		<script src="../css_js/muahang.js"></script>
+	</head>
+	<body style="background-color:#EEEEEE">
+		<div id="t">
+			<ul>
+				<li><a href="donhang.html">Tra cứu đơn hàng</a></li>
+				<li><a href="../login/dangnhap.html">Đăng nhập</a></li>
+			</ul>
+		</div>
+		<div id="header">
+			<i class="fa fa-bars"></i>
+			<a href="../index.html">
+				<span><strong>Duy Anh</strong></span>
+			</a>
+			<div id="TK">
+				<input class="text" type="text" placeholder="Bạn cần tìm gì?" />
+				<div>
+					<button type="submit" class="search"><img src="https://img.icons8.com/ios/28/000000/search--v1.png"/></button>
+				</div>
+			</div>
+			<div id="gio">
+				<a href="giohang.html" id="card-shop">
+					<img src="https://img.icons8.com/carbon-copy/40/000000/shopping-cart.png"/>
+					<span id="item" data-count="0">0</span>
+				</a>
+			</div>
+		</div>
+	
+		<div id='sanpham'>
+			<h2 class="product-name">Laptop ASUS VivoBook 14 A415EA</h2>
+            <div id="p1">
+                <div id="p1_1">                
+                    <img id="img-main" class="product-img" src="../Anh/laptop_asus_vivobook_a415ea-eb359t_4_.jpg">
+                </div>
+                <div id="p1_2">
+                    <div class="a2" id="1" onclick="Border('1');" style="margin-left: 18px;border: 1px solid red;">
+                        <img id="a2-1" src="../Anh/laptop_asus_vivobook_a415ea-eb359t_4_.jpg">
+                    </div>
+                    <div class="a2" id="2" onclick="Border('2');">
+                        <img id="a2-2" src="../Anh/au1,1.png">
+                    </div>
+                    <div class="a2" id="3" onclick="Border('3');">
+                        <img id="a2-3" src="../Anh/au1,2.png">
+                    </div>
+                </div>
+
+            </div>
+            <div id="p2">
+                <p id="text">
+                    <strong class="product-price">12.890.000</strong>
+                    <i>
+                        "Giá Niêm Yết: "
+                        <strike>15.90.000</strike>
+                    </i>
+                </p>
+                <p class="freeship">
+                    <img src="https://img.icons8.com/ios/34/ffffff/free-shipping.png"/>
+                    <span>Miễn phí ship toàn quốc</span>
+                </p>
+              
+
+                <div class="product-option version">
+                    <strong class="lable">Lựa chọn màu</strong>
+                    <div class="option">
+                        <input type="radio" id="g2-1" name="g2" value="1"/><label for="g2-1">Black
+						</label>
+						
+                        
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="g2-2" name="g2" value="2"/><label for="g2-2">Blue
+						</label>
+                        
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="g2-3" name="g2" value="3"/><label for="g2-3">Gold
+						</label>
+                        
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="g2-4" name="g2" value="4"/><label for="g2-4">Silver
+						</label>
+                        
+                    </div>
+                </div>
+                <div id="TT">
+                    <a href="#" title="Mua ngay">
+                        <div class="mua">
+                            MUA NGAY<br/>
+                            Trả tiền khi nhận hàng (COD)
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" id="them_hang" onclick="addToCart({id:'5',image:'../Anh/laptop_asus_vivobook_a415ea-eb359t_4_.jpg', price:12890000,price_s:15890000 , name:'ASUS VivoBook 14', mau:'Silver', phienban:'256GB'})" role="button" title="Thêm vào giỏ hàng">
+						<img src="https://img.icons8.com/material-outlined/38/ffffff/buy.png"/>
+                    </a>
+				
+                </div>
+            </div>
+            <div id="p3">
+                <div class="lt-cua-hang">
+                    <b>HIỆN 3 CỬA HÀNG CÓ SẴN SẢN PHẨM</b>
+                </div>
+                <span style="font-size: 15px;"><b>Cửa hàng còn hàng (bấm xem đường dẫn)</b></span>
+                <select class="list-cua-hang">
+                    <option selected>Quận/Huyện</option>
+                    <option>173 Trâu Quỳ,Gia Lâm,Hà Nội</option>              
+                    <option>173 Nguyễn Văn Cừ,Ngọc Lâm,Long Biên,Hà Nội</option>
+                    <option>21 Thái Hà,Trung Liệt,Đống Đa,Hà Nội</option>
+                </select>
+                <div class="thong-tin-bh">
+                    <b>Tình trạng</b><br/>
+                    Máy mới 100% , chính hãng Apple Việt Nam.<br/>
+                    CellphoneS hiện là đại lý bán lẻ uỷ quyền iPhone chính hãng VN/A của Apple Việt Nam<br/>
+                    <b>Hộp bao gồm</b><br/>
+                    Thân máy, cáp USB-C to Lightning, sách HDSD<br/>
+                    <b>Bảo hành</b><br/>
+                    Bảo hành 12 tháng tại trung tâm bảo hành chính hãng Apple Việt Nam. 1 ĐỔI 1 trong 30 ngày nếu có lỗi nhà sản xuất.<a href="#" style="color: red;">(Chi tiết)</a>
+                </div>
+            </div>
+		</div>
+
+		<div id="thong-tin">
+			<div id="thong-tin-sp">
+				<b>Mua ASUS VivoBook giá rẻ chính hãng tại Chí Thanh Mobile</b><br/> 
+				Ultrabook ngày càng trở thành một xu hướng được yêu thích với những người thường xuyên sử dụng laptop. Với sự nhỏ gọn, cơ động và thời trang đi kèm hiệu suất ổn định, các mẫu Ultrabook dường như đang chiếm thị phần không nhỏ trên thị trường máy tính xách tay.
+
+Là một thương hiệu vốn đã quá quen thuộc với các sản phẩm điện thoại thông minh trên toàn thế giới, gây ra khá nhiều bất ngờ khi quyết định gia nhập cả thị trường máy tính xách tay. <br/><br/>
+
+				<b>Thiết kế “lột xác”, màn hình sắc nét</b><br/> 
+				 được ra mắt nhanh chóng trở thành một sản phẩm thu hút sự chú ý của giới công nghệ ở phân khúc cận cao cấp. Là chiếc máy tính xách tay được thiết kế hiện đại, sang trọng và tích hợp những công nghệ phần cứng - phần mềm hiện đại, Matebook 14 2021 được dự báo sẽ trở nên rất “hot” tại thị trường Việt Nam trong thời gian sắp tới.
+				<img src="../Anh/au1,1.png">
+				Công nghệ màn hình OLED Super Retina XDR mang đến cho chất lượng hiển thị 
+				phải nói là xuất sắc bậc nhất. Độ phân giải màn hình Full HD 2,340 x 
+				1,080 cung cấp mật độ điểm ảnh siêu khủng lên tới 476ppi, giúp người 
+				dùng có thể thoải mái trải nghiệm những tác vụ giải trí hàng ngày như 
+				xem phim hoặc chơi game.<br/><br/>
+
+				
+				<img src="../Anh/au1,2.png">
+				Huawei gọi màn hình trên chiếc Matebook 14 2021 là FullView 2K. Sự ấn tượng từ phần màn hình 14 inches với tấm nền IPS có độ phân giải 2160x1140 px, độ sáng tối đa 300 nits là điều không cần phải bàn cãi. Màn hình tràn viền với các viền màn hình được cắt rất mỏng đem lại một góc nhìn rộng hơn, giúp bạn đắm chìm vào các nội dung giải trí.
+
+				Để tối ưu hóa trải nghiệm khi sử dụng tràn viền trên máy, Huawei đã loại bỏ chiếc webcam vốn nằm quen thuộc trên đầu màn hình. Thay vào đó, họ để webcam ở khu vực bàn phím, giữa phím F6 và F7. Chiếc camera có thể gập lại khi không sử dụng, đem lại sự an toàn cho người dùng.
+				<br/><br/>
+
+				<b>Hiệu năng đầu bảng với vi xử lý </b><br/> 
+				Khả năng bảo mật của máy được khẳng định qua cảm biến vân tay hiện đại cùng chiếc webcam dạng pop-up
+
+Máy được trang bị một cổng USB-C, một cổng HDMI, một jack cắm tai nghe 3.5mm và hai cổng USB-A. Khả năng kết nối truyền phương tiện đa kênh của máy giúp bạn học tập và làm việc hiệu quả hơn. Huawei đã tích hợp cho Matebook 14 2021 chuẩn Wi-Fi 6.0, tốc độ lên tới 2,4 Gbps.
+
+Huawei Matebook 14 2021 đang được bán ra tại Hoàng Hà Mobile với mức giá cực cạnh tranh. Hãy đến ngay chi nhánh Hoàng Hà Mobile gần nhất hoặc click đặt hàng để được miễn phí vận chuyển toàn quốc.
+				<br/><br/>
+			</div>
+			<div id="chi-tiet-sp">
+				<h3 style="padding-left: 10px;">Thông số kĩ thuật Laptop ASUS VivoBook 14 A415EA</h3>
+				<div class="anh-sp">
+					<img src="../Anh/au1,2.png"> <br/>
+				</div>
+				<ol>
+					<li>
+						<strong>Công nghệ màn hình: </strong>
+						<span>OLED</span>
+					</li>
+				</ol>
+				<ol>
+					<li>
+						<strong>Độ phân giải: </strong>
+						<span>Full HD+ (1080 x 2340 Pixels),  camera 12 MP </span>
+					</li>
+				</ol>
+				<ol>
+					<li>
+						<strong>Màn hình rộng: </strong>
+						<span>13"</span>
+					</li>
+				</ol>
+				<ol>
+					<li>
+						<strong>Hệ điều hành: </strong>
+						<span>Hệ điều hành: Win 11</span>
+					</li>
+				</ol>
+				<ol>
+					<li>
+						<strong>Chip xử lý (CPU): </strong>
+						<span>Intel core i5 503U platiun</span>
+					</li>
+				</ol>
+				<ol>
+					<li>
+						<strong>Bộ nhớ trong (ROM): </strong>
+						<span>128 GB</span>
+					</li>
+				</ol>
+				<ol>
+					<li>
+						<strong>Mạng:  </strong>
+						<span>Hỗ trợ 5G</span>
+					</li>
+				</ol>
+				<ol>
+					<li>
+						<strong>Số khe sim: </strong>
+						<span>không</span>
+					</li>
+				</ol>
+				<ol>
+					<li>
+						<strong>Trọng lượng:</strong>
+						<span> 2.1 kg</span>
+					</li>
+				</ol>
+				<ol>
+					<li>
+						<strong>Dung lượng pin: </strong>
+						<span>9h</span>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div id='footer'>
+			<div class="footer">
+				<div class="footer1">
+					<h3>Tìm cửa hàng</h3>
+					<div>Tìm cửa hàng gần nhất</div>
+					<div>Mua hàng từ xa</div>
+					<h3>Phương thức thanh toán</h3>
+					<ul>
+						<li>
+							<img src="../logo/logo-visa.png">
+							<img src="../logo/logo-master.png">
+						</li>
+						<li>
+							<img src="../logo/logo-jcb.png">
+							<img src="../logo/logo-samsungpay.png">
+						</li>
+						<li>
+							<img src="../logo/logo-atm.png">
+							<img src="../logo/logo-vnpay.png">
+						</li>
+					</ul>
+				</div>
+				<div class="footer1">
+					<h3>Điện thoại</h3>
+					<div>Gọi mua hàng:0911511786(8h/22h)</div>
+					<div>Gọi bảo hành:0911511786(8h/22h)</div>
+					<div>Gọi khiếu nại:0916094160(8h/22h)</div>
+				</div>
+				<div class="footer1">
+					<div class="TT">
+						<div>Mua hàng và thanh toán online</div>
+						<div>Mua hàng trả góp online</div>
+						<div>Tra thông tin đơn hàng</div>
+						<div>Tra thông tin bảo hành</div>
+						<div>Dịch vụ bảo hành điện thoại</div>
+						<div>Đối tác phục vụ bảo hành</div>
+					</div>
+				</div>
+				<div class="footer1">
+					<div class="TT">
+						<div>Quy chế hoạt động</div>
+						<div>Chính sách bảo hành</div>
+						<div>Liên hệ hợp tác kinh doanh</div>
+						<div>Tuyển dụng</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>LAPTOP DUY ANH</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/3875455e82.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="dangnhap.css">
+		<script src="../css_js/jquery-3.6.0.min.js"></script>
+		<script src="login.js"></script>
+	</head>
+	<body style="background-color:#EEEEEE">
+		<div class="login col-10">
+			<div class="phan-dau">
+				<a href="../index.html">
+					<img style="float: left;" src="https://img.icons8.com/pastel-glyph/60/000000/back.png"/>					
+					<strong>Quay lại</strong>
+				</a>
+			</div>
+			<div class="anh">
+				<img src="../Anh/login-bg.png">
+			</div>
+			<div class="from">
+				<h1>Đăng Nhập</h1>
+				<div class="dn-khac">
+					<button type="submit" class="dn-k fb" title="Đăng nhập qua Facebook">
+						<img src="../logo/logo-fb.png">
+						Tiếp tục với Facebook
+					</button>
+					<button type="submit" class="dn-k gg" title="Đăng nhập qua Google">
+						<img src="../logo/logo-gg.png">
+						Tiếp tục với Google
+					</button>
+				</div>
+				<div class="split">
+					<p>Hoặc</p>
+				</div>
+				
+				<form action="admin.html" method="POST" autocomplete="on" onsubmit="return show({'tk':'admin','mk':'admin'})">
+					<div class="lable">Tài Khoản</div>
+					<input class="input" type="text" name="username" id="username" placeholder="Nhập tài khoản *">
+					<div class="lable">Mật khẩu</div>
+					<input type="password" class="input" type="text" name="password" id="password" placeholder="Nhập mật khẩu *">
+					<div class="check">
+						<input class="checkbox" type="checkbox"> Nhớ đăng nhập
+					</div>
+					<div class="submit">
+						<button class="dn-submit" id="submit_login">ĐĂNG NHẬP</button>
+					</div>
+				</form>
+				
+			</div>
+		</div>
+	</body>
+</html>

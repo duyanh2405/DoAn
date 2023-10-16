@@ -1,0 +1,241 @@
+<html>
+	<head>
+		<title>Laptop - Chí Thanh</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/3875455e82.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="admin.css">
+        
+        <script src="../css_js/jquery-3.6.0.min.js" type="text/javascript" ></script>
+        <script src="admin.js"></script>
+	</head>
+	<body style="background-color:#EEEEEE">
+		<div id="t">
+            <div class="logo_ch">
+                <i class="fa fa-bars"></i>
+			    <a>
+				    <span><strong>Chí Thanh</strong></span>
+			    </a>
+            </div>
+            <div class="drowdown-open">
+                <label for="dorwdown-title">Xin chào: Admin</label>
+		        <input type="checkbox" id="dorwdown-title">
+                <div class="dorwdown-iteam">
+                    <ul>
+                        <li><a class="item" href="#" title="Thông tin tài khoản">Thông tin</a></li>
+                        <li><a class="item" href="dangnhap.html" title="Đăng xuất về trang mua hàng">Đăng xuất</a></li>
+                    </ul>    
+                </div>
+            </div>
+            <div class="cua-hang">
+                <span>Cửa hàng</span>
+                <select name="cuahang" id="cuahang" placeholder="Cửa hàng">
+                    <option value>Chọn cửa hàng</option>
+                    <option value="1">Cửa hàng số 1</option>
+                    <option value="2">Cửa hàng số 2</option>
+                </select>
+            </div>
+        </div>
+        <div id="main">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a id="donhang"  href="#">Đơn Hàng</a></li>
+                    <li><a id="sanpham"  href="#">Sản Phẩm</a></li>
+                    <li><a href="#">Khách Hàng</a></li>
+                    <li><a href="#">Nhập Kho</a></li>
+                    <li><a href="#">Tồn Kho</a></li>
+                    <li><a href="#">Doanh Số</a></li>
+                    <li><a href="#">Thu Chi</a></li>
+                    <li><a href="#">Thiết Lập</a></li>
+                </ul>
+            </div>
+            <div id="san_pham" style="display: block;">
+                <div class="from_sp">
+                    <div class="new">
+                        <div class="nameds"><h2>Danh sách sản phẩm</h2></div>
+                        <div class="namebtn">
+                            <button class="btn-ex" type="submit">Xuất Excel</button>
+                            <button class="btn-new" type="submit"><a href="samphammoi.html">Thêm Mới</a></button>
+                        </div>
+                    </div>
+                    <div class="tk col-12">
+                        <div class="from-controls">
+                            <div class="controls">
+                                <input type="text" name="tk-ma-ten" id="tk-ma-ten" style="width:400px" placeholder="Nhập mã sản phẩm hoặc tên sản phẩm">
+                            </div>
+                        </div>
+                        <div class="from-controls">
+                            <div class="controls">
+                                <select name="trang-thai" id="trang-thai" placeholder="Trạng thái">
+                                    <option value>Chọn trạng thái sản phẩm</option>
+                                    <option value="1">Đang kinh doanh</option>
+                                    <option value="2">Ngừng kinh doanh</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="from-controls">
+                            <div class="controls">
+                                <select name="danh-muc" id="danh-muc" placeholder="Danh Mục">
+                                    <option value>--Danh mục--</option>
+                                    <option value="1">Điện thoại</option>
+                                    <option value="2">Laptop</option>
+                                    <option value="3">Tablet</option>
+                                    <option value="2">Tai nghe</option>
+                                    <option value="2">Đồng hồ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="from-controls">
+                            <div class="controls">
+                                <select name="hang" id="hang" placeholder="Hãng sản phẩm">
+                                    <option value>Hãng sản phẩm</option>
+                                    <option value="1">Iphone</option>
+                                    <option value="2">Samsung</option>
+                                    <option value="3">Xiaomi</option>
+                                    <option value="2">Bkav</option>
+                                    <option value="2">Vsmart</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <button class="btn-tk" type="submit" >TÌM KIẾM</button>
+                        </div>
+                    </div>
+                    <div class="list-sp col-12">
+                        <table id="myTable" cellspacing='0' cellpadding='4'>
+                            <tr>
+                                <th><input type="checkbox" name="1" id="1"></th>
+                                <th class="th-ma">Mã sản phẩm</th>
+                                <th class="th-ten">Tên sản phẩm</th>
+                                <th class="th-anh">Ảnh</th>
+                            
+                                <th class="th-gia">Giá bán</th>
+                                <th class="th-danhmuc">Danh mục</th>
+                                <th class="th-hang">Hãng sản phẩm</th>
+                                <th class="th-tinhnang">Tính năng</th>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox" name="1" id="1"></th>
+                                <th class="th-ma">000001</th>
+                                <th class="th-ten">Macbook M1</th>
+                                <th class="th-anh"><img src="../Anh/mac1,2.png"></th>
+                           
+                                <th class="th-gia">32.690.000</th>
+                                <th class="th-danhmuc">Laptop</th>
+                                <th class="th-hang">Apple</th>
+                                <th class="th-tinhnang"><a href="#"></a><a href="#"><button class="btn-tk" style="cursor: pointer;" onclick="xoa();">Xóa</button></a></th>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox" name="1" id="1"></th>
+                                <th class="th-ma">000002</th>
+                                <th class="th-ten">MSI Gamming</th>
+                                <th class="th-anh"><img src="../Anh/msi1,2.png"></th>
+                                
+                                <th class="th-gia">22.490.000</th>
+                                <th class="th-danhmuc">Laptop</th>
+                                <th class="th-hang">MSI</th>
+                                <th class="th-tinhnang"><a href="#"></a><a href="#"><button class="btn-tk" style="cursor: pointer;" onclick="xoa();">Xóa</button></a></th>
+                                <script>
+                                    function xoa(){
+                                       if( confirm("bạn có muốn xóa không?"))
+                                        alert("xóa thành công!!!")
+                                    }
+                                </script>
+                            </tr>
+                        </table>
+                    
+                    </div>
+                </div>
+            </div>
+            <div id="don_hang" class="from_donhang"  style="display: none;">
+                <div class="from_sp">
+                    <div class="new">
+                        <div class="nameds"><h2>Danh sách đơn hàng</h2></div>
+                        <div class="namebtn">
+                            <button class="btn-ex" type="submit">In hoá đơn</button>
+                        </div>
+                    </div>
+                    <div class="tk col-11">
+                        <div class="from-controls">
+                            <div class="controls">
+                                <input type="text" name="tk-ma-ten" id="tk-ma-ten" style="width:400px" placeholder="Nhập mã đơn hàng để tìm kiếm">
+                            </div>
+                        </div>
+                        <div class="from-controls">
+                            <div class="controls">
+                                <input type="text" id="khac_hang" placeholder="Nhập tên khách hàng">
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <button class="btn-tk" type="submit" >TÌM KIẾM</button>
+                        </div>
+                    </div>
+                    <div class="list-sp col-12">
+                        <table cellspacing='0' cellpadding='4'>
+                            <tr>
+                                <th class="ma">Mã đơn hàng</th>
+                                <th class="ten">Tên sản phẩm</th>
+                                <th class="soluong">Số lượng</th>
+                                <th class="gia">Giá bán</th>
+                                <th class="tenkh">Tên khách hàng</th>
+
+                            </tr>
+                            <tr>
+                                <th class="ma">0001</th>
+                                <th class="ten">Macbook M1 Pro 8G</th>
+                                <th class="soluong">2</th>
+                                <th class="gia">31590000</th>
+                                <th class="tenkh">Chí Thanh</th>
+                    
+                            </tr>
+                            <tr>
+                                <th class="ma">0002</th>
+                                <th class="ten">ASUS Gamming</th>
+                                <th class="soluong">1</th>
+                                <th class="gia">21590000</th>
+                                <th class="tenkh">Chí Thanh</th>
+               
+                            </tr>
+                        </table>
+                       
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var modal = document.getElementById('don_hang');
+            var li1= document.getElementById("donhang");
+            li1.onclick = function() {
+                modal.style.display = "block";
+                modal1.style.display= "none";
+            }
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            var modal1 = document.getElementById('san_pham');
+            var li2= document.getElementById("sanpham");
+            li2.onclick = function() {
+                modal1.style.display = "block";
+                modal.style.display= "none";
+            }
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+        
+   
+</body>
+</html>
+
+
+
+
+
+    </body>
+</html>
